@@ -1,0 +1,47 @@
+{
+    "name": "@sepbit/flex",
+    "version": "1.0.0",
+    "description": "Descubra qual combustivél é mais vantajoso, etanol ou gasolina",
+    "keywords": [
+        "SEPBIT",
+        "calculadora",
+        "flex",
+        "combustivél",
+        "etanol",
+        "gasolina",
+        "pwa"
+    ],
+    "homepage": "https://notabug.org/sepbit/flex",
+    "bugs": {
+        "email": "contato@sepbit.com",
+        "url": "https://notabug.org/sepbit/flex/issues"
+    },
+    "license": "GPL-3.0-or-later",
+    "author": [
+        {
+            "name": "Vitor Guia",
+            "email": "contato@vitor.guia.nom.br",
+            "url": "https://vitor.guia.nom.br"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://notabug.org/sepbit/flex.git"
+    },
+    "scripts": {
+        "fix-style": "standard --fix 'assets/js/*.js''",
+        "check-style": "standard 'assets/js/*.js'"
+    },
+    "devDependencies": {
+        "jsdoc": "^3.6",
+        "standard": "^14.3"
+    },
+    "dependencies": {
+        "jquery": "^3.4",
+        "popper.js": "^1.15",
+        "bootstrap": "^4.3"
+    },
+    "engines": {
+        "node": "^10.15"
+    }
+}

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora Flex</title>
+    <meta name="description" content="Descubra qual combustivél é mais vantajoso, etanol ou gasolina">
+    <meta name="author" content="Vitor Guia">
+    <meta name="theme-color" content="#007bff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/assets/images/1200x630.png">
+    <link rel="shortcut icon" href="/assets/images/512.png">
+    <link rel="manifest" href="/pwa.webmanifest">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <noscript>Por favor habilite o JavaScript em seu navegador!</noscript>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#nav" aria-controls="nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Calculadora Flex</a>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/#/">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#/about">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- container -->
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+
+      <!--
+        Home page
+      -->
+      <main class="container" style="display: none" id="home">
+        <div class="row">
+          <div class="offset-md-3 col-md-6">
+
+            <form id="calculator">
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="ethanol">Etanol (R$)</label>
+                    <input type="number" step="0.01" min="0" class="form-control"
+                           id="ethanol" placeholder="3.50" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="gasoline">Gasolina (R$)</label>
+                    <input type="number" step="0.01" min="0" class="form-control"
+                           id="gasoline" placeholder="4.00" required />
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <input class="btn btn-primary" type="submit" value="Calcular" />
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </main>
+
+      <!--
+        About page
+      -->
+      <main class="container" style="display: none" id="about">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+
+            <h1>Sobre</h1>
+            <br />
+
+            <p>Na vigente data o litro de gasolina contém 27% de álcool anidro, portanto a formula a seguir assume que a gasolina é 30% mais eficiente que o etanol.</p>
+            <p>O resultado da divisão do valor da gasolina pelo valor do etanol, sendo menor ou igual à 0.70 é mais vantajoso abastecer com etanol, se não é mais vantajoso abastecer com gasolina.</p>
+
+            <br />
+            <hr />
+            <br />
+
+            <h2>Licença</h2>
+            <br />
+
+            <p>Este programa vem com ABSOLUTAMENTE SEM NENHUMA GARANTIA. Este é um software livre e você pode redistribuí-lo sob certas condições, veja as licenças abaixo.</p>
+
+            <br />
+            <h4>Licenças do JavaScript</h4>
+            <br />
+
+            <!--
+              LibreJS
+            -->
+            <div class="table-responsive">
+              <table class="table table-striped" id="jslicense-labels1">
+                <tr>
+                  <td><a href="https://code.jquery.com/jquery-3.3.1.slim.min.js">jquery-3.3.1.slim.min.js</a></td>
+                  <td><a href="http://www.jclark.com/xml/copying.txt">Expat</a></td>
+                  <td><a href="https://code.jquery.com/jquery-3.3.1.slim.js">jquery-3.3.1.slim.js</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">popper.min.js</a></td>
+                  <td><a href="http://www.jclark.com/xml/copying.txt">Expat</a></td>
+                  <td><a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js">popper.js</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">bootstrap.min.js</a></td>
+                  <td><a href="http://www.jclark.com/xml/copying.txt">Expat</a></td>
+                  <td><a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js">bootstrap.js</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/assets/app.js">app.js</a></td>
+                  <td><a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
+                  <td><a href="/assets/app.js">app.js</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <br />
+            <h4>Licença da imagem</h4>
+            <br />
+
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/assets/images/512.png" class="img-fluid img-thumbnail rounded" alt="Ícone do projeto" />
+              </div>
+              <div class="col-md-8">
+                <br />
+                <p>Este trabalho foi baseado no <a href="/assets/images/gas-297117.svg">trabalho</a> produzido por <a href="https://pixabay.com/pt/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=297117">Clker-Free-Vector-Images</a>, distribuído por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=297117">Pixabay</a> e licenciada por <a href="https://pixabay.com/en/service/license/" target="_blank">Pixabay License</a>.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+      <br />
+
+      <!--
+        Alert progress
+      -->
+      <div class="modal fade" tabindex="-1" role="dialog"
+           data-backdrop="static" id="loading">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Calculando...</h5>
+              <button type="button" class="close"
+                      data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                     role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                     aria-valuemax="100" style="width: 75%"></div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Alert result
+      -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="resultModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Resultado</h5>
+              <button type="button" class="close"
+                      data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div id="resultMsg"></div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Wrapper -->
+
+    <footer class="text-light bg-primary">
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+            <p>
+              <a href="https://notabug.org/sepbit/flex" target="_blank">Código fonte</a> |
+              <a href="/#/about" rel="jslicense">Informação de licença JavaScript</a>
+              <br />&copy; 2011-2019 SEPBIT
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery, Popper.js and Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- App -->
+    <script src="/assets/js/app.js"></script>
+    <script>
+      // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/ws.js')
+          .then(function() {
+            console.log('Service Worker Registered');
+          })
+      }
+      // @license-end
+    </script>
+  </body>
+</html>

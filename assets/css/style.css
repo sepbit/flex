@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+footer a {
+  color: #E0E0E0;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
