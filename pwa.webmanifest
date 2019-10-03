@@ -1,7 +1,7 @@
 {
   "name": "Calculadora Flex",
   "short_name": "Flex",
-  "description": "Descubra qual combustivél é mais vantajoso, etanol ou gasolina",
+  "description": "Descubra qual combustível é mais vantajoso, etanol ou gasolina",
   "start_url": "/",
   "display": "standalone",
   "orientation" : "any",

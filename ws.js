@@ -1,6 +1,6 @@
 /* global caches, fetch, self */
 
-const cacheName = 'flex-v1'
+const cacheName = 'flex-v3'
 const contentToCache = [
   '/',
   '/index.html',

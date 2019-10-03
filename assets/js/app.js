@@ -35,31 +35,36 @@
 
 const app = {
   init: function () {
-    window.addEventListener('hashchange', this.router)
-    window.addEventListener('load', this.router)
+    this.router()
     this.toggler()
     this.form()
   },
 
   router: function () {
-    const home = document.getElementById('home')
-    const about = document.getElementById('about')
+    const homeMain = document.getElementById('homeMain')
+    const aboutMain = document.getElementById('aboutMain')
 
-    if (window.location.hash === '#/about') {
-      home.style.display = 'none'
-      about.style.display = ''
+    const homeNav = document.getElementById('homeNav')
+    homeNav.addEventListener('click', function (e) {
+      e.preventDefault()
+      homeMain.style.display = ''
+      aboutMain.style.display = 'none'
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-    } else {
-      home.style.display = ''
-      about.style.display = 'none'
+    })
+
+    const aboutNav = document.getElementById('aboutNav')
+    aboutNav.addEventListener('click', function (e) {
+      e.preventDefault()
+      homeMain.style.display = 'none'
+      aboutMain.style.display = ''
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-    }
+    })
   },
 
   toggler: function () {
-    if (window.screen.width < 992) {
+    if (window.innerWidth < 992) {
       $('.navbar-nav a').on('click', function () {
         $('.navbar-toggler').click()
       })
