@@ -1,10 +1,10 @@
 /**
- * @source: https://notabug.org/sepbit/aaaa
+ * @source: https://notabug.org/sepbit/flex
  *
  * @licstart  The following is the entire license notice for the
  * JavaScript code in this page.
  *
- * aaaa - aaaa
+ * Flex - Calculadora Flex
  * Copyright (C) 2019  SEPBIT
  *
  * The JavaScript code in this page is free software: you can
@@ -29,7 +29,7 @@
  * @author    Vitor Guia <contato@vitor.guia.nom.br>
  * @copyright 2019 SEPBIT
  * @license   GPL-3.0-or-later
- * @see       {@link https://notabug.org/sepbit/aaaa|Repository of aaaa}
+ * @see       {@link https://notabug.org/sepbit/flex |Repository of Flex}
  */
 /* global $ */
 
@@ -55,6 +55,15 @@ const app = {
 
     const aboutNav = document.getElementById('aboutNav')
     aboutNav.addEventListener('click', function (e) {
+      e.preventDefault()
+      homeMain.style.display = 'none'
+      aboutMain.style.display = ''
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    })
+
+    const librejs = document.getElementById('librejs')
+    librejs.addEventListener('click', function (e) {
       e.preventDefault()
       homeMain.style.display = 'none'
       aboutMain.style.display = ''
