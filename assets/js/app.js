@@ -35,44 +35,32 @@
 
 const app = {
   init: function () {
-    this.router()
+    window.addEventListener('hashchange', this.router)
+    window.addEventListener('load', this.router)
     this.toggler()
     this.form()
   },
 
   router: function () {
-    const homeMain = document.getElementById('homeMain')
-    const aboutMain = document.getElementById('aboutMain')
+    const home = document.getElementById('home')
+    const about = document.getElementById('about')
 
-    const homeNav = document.getElementById('homeNav')
-    homeNav.addEventListener('click', function () {
-      homeMain.style.display = ''
-      aboutMain.style.display = 'none'
+    if (window.location.hash === '#/about') {
+      home.style.display = 'none'
+      about.style.display = ''
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-    })
-
-    const aboutNav = document.getElementById('aboutNav')
-    aboutNav.addEventListener('click', function () {
-      homeMain.style.display = 'none'
-      aboutMain.style.display = ''
+    } else {
+      home.style.display = ''
+      about.style.display = 'none'
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
-    })
-
-    const librejs = document.getElementById('librejs')
-    librejs.addEventListener('click', function (e) {
-      e.preventDefault()
-      homeMain.style.display = 'none'
-      aboutMain.style.display = ''
-      document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0
-    })
+    }
   },
 
   toggler: function () {
     if (window.innerWidth < 992) {
-      $('.navbar-nav div').on('click', function () {
+      $('.navbar-nav a').on('click', function () {
         $('.navbar-toggler').click()
       })
     }
