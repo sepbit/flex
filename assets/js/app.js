@@ -45,8 +45,7 @@ const app = {
     const aboutMain = document.getElementById('aboutMain')
 
     const homeNav = document.getElementById('homeNav')
-    homeNav.addEventListener('click', function (e) {
-      e.preventDefault()
+    homeNav.addEventListener('click', function () {
       homeMain.style.display = ''
       aboutMain.style.display = 'none'
       document.body.scrollTop = 0
@@ -54,8 +53,7 @@ const app = {
     })
 
     const aboutNav = document.getElementById('aboutNav')
-    aboutNav.addEventListener('click', function (e) {
-      e.preventDefault()
+    aboutNav.addEventListener('click', function () {
       homeMain.style.display = 'none'
       aboutMain.style.display = ''
       document.body.scrollTop = 0
@@ -74,7 +72,7 @@ const app = {
 
   toggler: function () {
     if (window.innerWidth < 992) {
-      $('.navbar-nav a').on('click', function () {
+      $('.navbar-nav div').on('click', function () {
         $('.navbar-toggler').click()
       })
     }
