@@ -44,12 +44,22 @@ const app = {
   router: function () {
     const home = document.getElementById('home')
     const about = document.getElementById('about')
+    const librejs = document.getElementById('librejs')
+    const privacy = document.getElementById('privacy')
 
     if (window.location.hash === '#/about') {
       home.style.display = 'none'
       about.style.display = ''
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
+    } else if (window.location.hash === '#/about/librejs') {
+      home.style.display = 'none'
+      about.style.display = ''
+      librejs.scrollIntoView()
+    } else if (window.location.hash === '#/about/privacy') {
+      home.style.display = 'none'
+      about.style.display = ''
+      privacy.scrollIntoView()
     } else {
       home.style.display = ''
       about.style.display = 'none'
