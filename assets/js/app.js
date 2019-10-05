@@ -45,9 +45,7 @@ const app = {
     const home = document.getElementById('home')
     const about = document.getElementById('about')
 
-    if (window.location.hash === '#/about' ||
-      window.location.hash === '#/about/librejs' ||
-      window.location.hash === '#/about/privacy') {
+    if (window.location.hash === '#/about') {
       home.style.display = 'none'
       about.style.display = ''
       document.body.scrollTop = 0
