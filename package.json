@@ -29,7 +29,7 @@
         "url": "https://gitlab.com/sepbit/flex.git"
     },
     "scripts": {
-        "fix-style": "standard --fix 'assets/js/*.js''",
+        "fix-style": "standard --fix 'assets/js/*.js'",
         "check-style": "standard 'assets/js/*.js'"
     },
     "devDependencies": {

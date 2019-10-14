@@ -4,7 +4,11 @@ Please wait for the documentation
 
 ## Install
 
-https://flex.sepbit.com
+* Web Browser: [https://flex.sepbit.com](https://flex.sepbit.com)
+
+* Microsoft Store:: [https://www.microsoft.com/store/apps/9PNML880311P](https://www.microsoft.com/store/apps/9PNML880311P)
+
+* Play Store: [https://play.google.com/store/apps/details?id=com.sepbit.flex](https://play.google.com/store/apps/details?id=com.sepbit.flex)
 
 ## Contributing
 
