@@ -1,6 +1,6 @@
 # Flex
 
-Please wait for the documentation
+Descubra qual combustível é mais vantajoso, etanol ou gasolina
 
 ## Install
 
@@ -15,6 +15,10 @@ Please wait for the documentation
 I am not good with design, if you can make it beautiful, fork and let me know and the link to your repository will be here.
 
 Pull Requests not accepted.
+
+## Security
+
+If you discover any security related issues, please email `contato@sepbit.com` instead of using the issue tracker.
 
 ## License
 
