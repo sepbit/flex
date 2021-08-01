@@ -2,6 +2,11 @@
 
 See [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.0.2] - 2021-07-31
+### Changed
+- Update 
+
+
 ## [1.0.1] - 2020-04-1
 ### Changed
 - GitLab pages 

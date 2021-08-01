@@ -2,6 +2,8 @@
 
 Descubra qual combustível é mais vantajoso, etanol ou gasolina
 
+Este pacote é compatível com [Prettier](https://prettier.io), [StandardJS](https://standardjs.com) and [LibreJS](https://www.gnu.org/software/librejs).
+
 ## Install
 
 * Web Browser: [https://flex.sepbit.com](https://flex.sepbit.com)
