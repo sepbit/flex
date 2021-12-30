@@ -1,7 +1,7 @@
 {
   "name": "Calculadora Flex",
   "short_name": "Flex",
-  "description": "Descubra qual combustível é mais vantajoso, etanol ou gasolina",
+  "description": "Calculadora flex, calculadora de combustível, calculadora de gasolina e etanol  descubra com qual combustível é mais vantajoso de se abastecer",
   "start_url": "/",
   "display": "standalone",
   "orientation" : "any",
@@ -13,5 +13,11 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.sepbit.flex",
+      "id": "com.sepbit.flex"
+    }]
 }
