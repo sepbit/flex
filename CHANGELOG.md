@@ -2,6 +2,10 @@
 
 See [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.0.3] - 2021-12-30
+### Changed
+- Otimização SEO 
+
 ## [1.0.1] - 2020-04-1
 ### Changed
 - GitLab pages 
